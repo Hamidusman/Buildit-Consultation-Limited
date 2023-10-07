@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Previous Projects</h2>
+            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Gallery Section ======= -->
+{% for p in images %}
+            <div class="the-container">
+              <div class="kkk">
+                <img class="gallery-img" src="{{p.image.url}}" class="img-" alt="">
+              </div>
+              <h2 class="titles">{{p.name}}</h2>
+            </div>
+          <br>
+{% endfor %}
+
+{% endblock %}
+
