@@ -18,15 +18,38 @@
     </div><!-- End Page Header -->
 
     <!-- ======= Gallery Section ======= -->
-{% for p in images %}
+{% for p in image_list %}
             <div class="the-container">
               <div class="kkk">
                 <img class="gallery-img" src="{{p.image.url}}" class="img-" alt="">
               </div>
               <h2 class="titles">{{p.name}}</h2>
+              <div class="paginator">
+
+                <br>
+
+                {% if image_list.has_previous%}
+                <a class="pager" href="?page=1">&laquo; First</a>
+                <a class="pager" href="?page={{image_list.previous_page_number}}">Previous</a>
+                {% endif %}
+                
+                 Page {{image_list.number}} of {{ image_list.paginator.num_pages}}
+                
+                {% if image_list.has_next %}
+                <a class="pager" href="?page={{image_list.next_page_number}}">Next</a>
+                <a class="pager" href="?page={{ image_list.paginator.num_pages}}">Last &raquo;</a>
+                {% endif%}
+              </div>
             </div>
           <br>
 {% endfor %}
+<br><br>
+<!--
+{{image_list}} <br>
+Previous: {{image_list.has_previous}} <br>
+Current: {{image_list.number}} <br>
+Next: {{image_list.has_next}} <br>
+          -->
 
 {% endblock %}
 
