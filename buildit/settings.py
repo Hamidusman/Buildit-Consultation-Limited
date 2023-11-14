@@ -51,6 +51,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 ROOT_URLCONF = 'buildit.urls'
 
 TEMPLATES = [
@@ -119,8 +122,8 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/gallery/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'gallery')
+MEDIA_URL = '/static/gallery/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles/gallery')
 
 STATICFILES_DIRS = [
     BASE_DIR /'static'
