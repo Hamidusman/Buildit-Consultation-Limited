@@ -9,7 +9,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Previous Projects</h2>
+            <h2>Project Gallery</h2>
             <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
 
           </div>
@@ -17,32 +17,97 @@
       </div>
     </div><!-- End Page Header -->
 
-    <!-- ======= Gallery Section ======= -->
-{% for p in image_list %}
+    <!-- ======= Gallery Section ======= --> 
+<!--
+              <div class="the-container">
+              <div class="kkk">
+                <img class="gallery-img" src="/gallery/Berlin.png" class="img-" alt="">
+              </div>
+              <h2 class="titles">Berlin</h2>
+            </div>
+            <br/>
+            
+-->
             <div class="the-container">
               <div class="kkk">
-                <img class="gallery-img" src="{{p.image_list.url}}" class="img-" alt="">
+                <img class="gallery-img" src="/gallery/Canopy.jpg" class="img-" alt="">
               </div>
-              <h2 class="titles">{{p.name}}</h2>
-              <div class="paginator">
-
-                <br>
-
-                {% if image_list.has_previous%}
-                <a class="pager" href="?page=1">&laquo; First</a>
-                <a class="pager" href="?page={{image_list.previous_page_number}}">Previous</a>
-                {% endif %}
-                
-                 Page {{image_list.number}} of {{ image_list.paginator.num_pages}}
-                
-                {% if image_list.has_next %}
-                <a class="pager" href="?page={{image_list.next_page_number}}">Next</a>
-                <a class="pager" href="?page={{ image_list.paginator.num_pages}}">Last &raquo;</a>
-                {% endif%}
-              </div>
+              <h2 class="titles">Canopy</h2>
             </div>
-          <br>
-{% endfor %}
+            <br/>
+            <div class="the-container">
+              <div class="kkk">
+                <img class="gallery-img" src="/gallery/Castle.jpg" class="img-" alt="">
+              </div>
+              <h2 class="titles">Castle</h2>
+            </div>
+            <br/>
+            <div class="the-container">
+              <div class="kkk">
+                <img class="gallery-img" src="/gallery/Eden.jpg" class="img-" alt="">
+              </div>
+              <h2 class="titles">Eden</h2>
+            </div>
+          <br> 
+
+          
+          <div class="the-container">
+            <div class="kkk">
+              <img class="gallery-img" src="/gallery/Nomad.jpg" class="img-" alt="">
+            </div>
+            <h2 class="titles">Nomad</h2>
+          </div>
+        <br> 
+        
+          <div class="the-container">
+            <div class="kkk">
+              <img class="gallery-img" src="/gallery/Obsidian.jpg" class="img-" alt="">
+            </div>
+            <h2 class="titles">Obsidian</h2>
+          </div>
+      <br> 
+      
+          <div class="the-container">
+            <div class="kkk">
+              <img class="gallery-img" src="/gallery/Odessey.jpg" class="img-" alt="">
+            </div>
+            <h2 class="titles">Odessey</h2>
+          </div>
+    <br> 
+    
+        <div class="the-container">
+          <div class="kkk">
+            <img class="gallery-img" src="/gallery/Phantom.jpg" class="img-" alt="">
+          </div>
+          <h2 class="titles">Phantom</h2>
+        </div>
+      <br> 
+  
+      <div class="the-container">
+        <div class="kkk">
+          <img class="gallery-img" src="/gallery/Stockholm.jpg" class="img-" alt="">
+        </div>
+        <h2 class="titles">Stockholm</h2>
+      </div>
+   
+      <br/>
+      <div class="the-container">
+        <div class="kkk">
+          <img class="gallery-img" src="/gallery/Xenux.jpg" class="img-" alt="">
+        </div>
+        <h2 class="titles">Xenux</h2>
+      </div>
+
+      <br/>
+  
+      <div class="the-container">
+        <div class="kkk">
+          <img class="gallery-img" src="/gallery/Zeal.jpg" class="img-" alt="">
+        </div>
+        <h2 class="titles">Zeal</h2>
+      </div>
+  
+    <br> 
 <br><br>
 <!--
 {{image_list}} <br>

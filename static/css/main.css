@@ -232,7 +232,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
+
 }
 
 .gallery-img{
@@ -243,7 +244,7 @@ h6 {
     width: 220px;
   }
   .gallery-img{
-    width: 640px
+    width: 540px
   }
   
 }
@@ -490,7 +491,9 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
-
+.title{
+  margin-top: 5px
+}
   .navbar a,
   .navbar a:focus {
     display: flex;
